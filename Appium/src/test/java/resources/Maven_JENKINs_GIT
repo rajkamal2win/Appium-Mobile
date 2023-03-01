@@ -1,0 +1,84 @@
+To Run in Maven
+maven-surefire-plugin -> Google maven testng xml
+Create profile -> Give profileName
+Open cmd -> cd project path
+mvn test -PprofileName
+mvn test -PRegression -DipAddress=127.0.0.1-> P for Profile, D for run time parameters
+---------------------------------------------------------------------------------------------------------------------------------
+To Run through Jenkins
+1) Download jenkins.war file
+2) cmd -> cd <Jenkins.War file path>
+3) Jenkins is the server -> To start the server -> java -jar jenkins.war -httpPort=8080
+4) Once the server is running -> Open Browser -> http://localhost:8080/
+
+In http://localhost:8080/
+1) New Item -> Give Name -> Freestyle Project -> Ok
+2) Advanced -> use custom workspace -> path of ur local project
+3) Add Build Step -> Invoke top-level maven targets -> test -PRegression -> Save (to add goals)
+4) Build Now
+5) Open the build -> Console Output (to see execution status)
+
+Parameterization in Jenkins
+1) Click on Project -> Configure
+2) Check "This project is parameterized" checkbox
+3) Add Parameter -> Choice Parameter
+4) Give Name as profile and Choices as Regression Smoke (one by one like a list)
+5) From Goals -> test -P"$profile" -> Save
+6) click Build with Parameters
+7) Runtime profile option will be available to choose
+8) Choose the parameter and Build
+
+b) Adding multiple parameters
+1) Follow above steps 1 to 3
+2) Give Name as ipAddress and Choices as 127.0.0.1 323.434.534.535 (one by one like a list)
+3) From Goals -> test -P"$profile -D"$ipAddress" -> Save
+4) follow above steps 6 to 8
+
+To see Reports:
+To Click project -> Workspace -> Reports
+
+Scheduling the Job: (ref: https://www.cloudbees.com/blog/how-to-schedule-a-jenkins-job)
+1) Click on Project -> Configure
+2) Build Triggers -> Build periodically -> Give the time -> Click tab
+3) Jenkins will show at what time interval the job will be triggered
+4) Click Save -> job will run in scheduled time
+---------------------------------------------------------------------------------------------------------------------------------
+GIT - Version control system 
+1) Click New Repository -> Repository Name -> Choose Public or Private -> Create Repository
+Reference: https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html
+
+2) Tell git who u r
+git config --global user.name "rajkamal2win"
+git config --global user.email "rajkamal2win@gmail.com"
+
+3) To Push code (1st Time)
+	a) Go to GITDemo Local repo in cmd prompt -> cd GITDemo Path
+	b) git init -> to initialize the local repo
+	c) git add * -> to add all the files to staging (Level 1)
+	d) git status -> To know the status
+	e) git commit -m "Revising Git" -> To commit the files from staging (Level 2)
+	f) git remote add origin https://github.com/rajkamal2win/GITDemo.git -> To connect to remote repo in GITHUB (get the url from GITHUB)
+	g) git push orgin master -> To push the code from commit (Level 3)
+	h) code will be uploaded
+
+	
+4) To clone code -> To downloading whole code to local first time
+git clone https://github.com/rajkamal2win/GITDemo.git
+
+5) To pull code from remote
+	a) go to the local repo path (GITX - 2nd person) -> cmd
+	b) git pull orgin master
+
+6) Branches
+	a) git checkout -b develop -> to create new branch in local
+	b) git branch -> to check which branch u r in local
+	c) git checkout develop -> to switch to develop branch
+	
+7) Merging code from develop to master
+	a) git checkout master -> moving to master
+	b) git pull origin master -> to make sure code is upto date
+	c) git merge develop -> merging the code from given branch (develop) to current branch (master)
+	
+8) Resolve Merge Conflicts
+	a) check the file, talk to the owner and resolve the conflicts manually	
+---------------------------------------------------------------------------------------------------------------------------------
