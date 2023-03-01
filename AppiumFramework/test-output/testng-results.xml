@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-02-22T16:27:32 IST" name="Suite" finished-at="2023-02-22T16:29:25 IST" duration-ms="113975">
+    <groups>
+      <group name="Smoke">
+        <method signature="ecommerce_tc_4_Hybrid.fillForm(java.util.HashMap)[pri:0, instance:org.appium.ecommerce_tc_4_Hybrid@5674e1f2]" name="fillForm" class="org.appium.ecommerce_tc_4_Hybrid"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2023-02-22T16:27:32 IST" name="End to End Framework Test" finished-at="2023-02-22T16:28:35 IST" duration-ms="63673">
+      <class name="org.appium.ecommerce_tc_4_Hybrid">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:org.appium.ecommerce_tc_4_Hybrid@5674e1f2]" started-at="2023-02-22T16:27:32 IST" name="configureAppium" finished-at="2023-02-22T16:27:50 IST" duration-ms="18849" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureAppium -->
+        <test-method is-config="true" signature="preSetup()[pri:0, instance:org.appium.ecommerce_tc_4_Hybrid@5674e1f2]" started-at="2023-02-22T16:27:51 IST" name="preSetup" finished-at="2023-02-22T16:27:52 IST" duration-ms="920" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preSetup -->
+        <test-method signature="fillForm(java.util.HashMap)[pri:0, instance:org.appium.ecommerce_tc_4_Hybrid@5674e1f2]" started-at="2023-02-22T16:27:52 IST" name="fillForm" data-provider="getData" finished-at="2023-02-22T16:28:13 IST" duration-ms="21116" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Messi, country=Argentina, gender=Male}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillForm -->
+        <test-method is-config="true" signature="preSetup()[pri:0, instance:org.appium.ecommerce_tc_4_Hybrid@5674e1f2]" started-at="2023-02-22T16:28:13 IST" name="preSetup" finished-at="2023-02-22T16:28:14 IST" duration-ms="881" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preSetup -->
+        <test-method signature="fillForm(java.util.HashMap)[pri:0, instance:org.appium.ecommerce_tc_4_Hybrid@5674e1f2]" started-at="2023-02-22T16:28:14 IST" name="fillForm" data-provider="getData" finished-at="2023-02-22T16:28:35 IST" duration-ms="21003" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=Alexa, country=Australia, gender=Female}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillForm -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.appium.ecommerce_tc_4_Hybrid@5674e1f2]" started-at="2023-02-22T16:28:35 IST" name="tearDown" finished-at="2023-02-22T16:28:35 IST" duration-ms="593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.appium.ecommerce_tc_4_Hybrid -->
+    </test> <!-- End to End Framework Test -->
+    <test started-at="2023-02-22T16:28:35 IST" name="Error Validations test" finished-at="2023-02-22T16:29:25 IST" duration-ms="50002">
+      <class name="org.appium.ecommerce_tc_1">
+        <test-method is-config="true" signature="configureAppium()[pri:0, instance:org.appium.ecommerce_tc_1@5cde6747]" started-at="2023-02-22T16:28:35 IST" name="configureAppium" finished-at="2023-02-22T16:28:53 IST" duration-ms="17252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureAppium -->
+        <test-method is-config="true" signature="preSetup()[pri:0, instance:org.appium.ecommerce_tc_1@5cde6747]" started-at="2023-02-22T16:28:53 IST" name="preSetup" finished-at="2023-02-22T16:28:54 IST" duration-ms="1061" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preSetup -->
+        <test-method signature="fillForm_ErrorValidation()[pri:0, instance:org.appium.ecommerce_tc_1@5cde6747]" started-at="2023-02-22T16:28:54 IST" name="fillForm_ErrorValidation" finished-at="2023-02-22T16:29:04 IST" duration-ms="9888" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillForm_ErrorValidation -->
+        <test-method is-config="true" signature="preSetup()[pri:0, instance:org.appium.ecommerce_tc_1@5cde6747]" started-at="2023-02-22T16:29:04 IST" name="preSetup" finished-at="2023-02-22T16:29:05 IST" duration-ms="883" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preSetup -->
+        <test-method signature="fillForm_PositiveFlow()[pri:0, instance:org.appium.ecommerce_tc_1@5cde6747]" started-at="2023-02-22T16:29:05 IST" name="fillForm_PositiveFlow" finished-at="2023-02-22T16:29:25 IST" duration-ms="20413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillForm_PositiveFlow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.appium.ecommerce_tc_1@5cde6747]" started-at="2023-02-22T16:29:25 IST" name="tearDown" finished-at="2023-02-22T16:29:25 IST" duration-ms="502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.appium.ecommerce_tc_1 -->
+    </test> <!-- Error Validations test -->
+  </suite> <!-- Suite -->
+</testng-results>
