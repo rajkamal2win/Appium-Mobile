@@ -42,6 +42,17 @@ Scheduling the Job: (ref: https://www.cloudbees.com/blog/how-to-schedule-a-jenki
 2) Build Triggers -> Build periodically -> Give the time -> Click tab
 3) Jenkins will show at what time interval the job will be triggered
 4) Click Save -> job will run in scheduled time
+
+Jenkins with GITHub
+Step 1: Create a Jenkins Job => New Item -> Give Name -> Pipeline Project
+Step 2: Configure GitHub Hook Trigger => Config page -> Github Hook Trigger for GITScm Polling checkbox
+Step 3: Create a GitHub Repository 
+Step 4: Connect a GitHub Repository => Pipeline -> Select "Pipeline script from SCM", Select "Git" in SCM dropdown, Specify Repository URL
+															Type the "Jenkinsfile" path in Script path -> Save
+Step 5: Adding a WebHook in GitHub => Go to Git repo -> settings -> Add WebHook -> In Payoad URL -> Add Jenkis Sever Url
+Step 6: Manually Building Jenkins Job => Jenkins Dashboard -> Build now
+Step 7: Trigger Build with GitHub Commit => Henceforth job will trigger automatically whenever a new commit in GIT
+Summary
 ---------------------------------------------------------------------------------------------------------------------------------
 GIT - Version control system 
 1) Click New Repository -> Repository Name -> Choose Public or Private -> Create Repository
